@@ -1,0 +1,199 @@
+/* colour scheme! from http://khroma.co/generator/ with love*/
+:root {
+    --colour1: ;
+    --colour2: ;
+    --colour3: ;
+}
+
+html{
+font-size: 62.5%;
+ }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 1.75rem;
+    line-height: 1.5;
+    color: var();
+    background-color:rgb(174, 190, 185)
+}
+
+
+
+/* Category Grid CSS */
+
+.subHeading {
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 300px;
+  margin: 50px auto;
+}
+
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 200px 200px;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-areas:
+  "refactor refactor"
+  "csCheat ph1"
+  "ph2 ph3"
+  ;
+}
+
+#bookcases {
+  grid-area: bookcases;
+  background-image: url("../images/Code refactor.PNG");
+
+}
+#bedroom {
+  grid-area: bedroom;
+  background-image: url("../images/CSS cheatsheet.PNG");
+}
+
+#couches {
+  grid-area: couches;
+  background-image: url("../images/placeholder-1-e1533569576673-960x960.png");
+}
+
+#patio {
+  grid-area: patio;
+  background-image: url("../images/placeholder-1-e1533569576673-960x960.png");
+}
+
+#desks {
+  grid-area: desks;
+  background-image: url("../images/placeholder-1-e1533569576673-960x960.png");
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+#about{
+  padding: 15px;
+  text-align: center;
+  
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.9);
+  padding: 6px;
+  color: white;
+  font-size: 20px;
+  border-bottom: 5px solid #FF6200;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+
+/* Navigation CSS */
+/* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+#navBar h1 {
+  width: 25%;
+  font-weight: 200;
+}
+#navigation {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0,0,0,0.6);
+  margin: 0px 0px 0px 0px
+}
+
+#navigation p {
+  cursor: pointer;
+  font-size: 35px;
+  color: #FF6200;
+}
+
+ul{
+  display:-inline-grid;
+  grid-auto-flow: row;
+  justify-items: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Typography CSS */
+
+h1 {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 60px;
+  margin: 0px 0px;
+  color: #FF6200; 
+}
+
+h3 {
+  font-size: 42px;
+  font-weight: 300;
+  margin: 0px 0px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+
+#headline p {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 0px;
+  color: #636364;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FF6200;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.noDecoration, a:link, a:visited {
+  text-decoration: none;
+}
+
+@media screen and (min-width768px) {
+  .categoryGridArea{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+  #categoryGridArea:last-child {
+    flex-grow: 1;
+  }
+
+
+@media screen and (min-width: 992px) {
+  .categoryGridArea{
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
