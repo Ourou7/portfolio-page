@@ -43,12 +43,12 @@ body {
 
 #refactor {
   grid-area: refactor;
-  background-image: url("../images/Code refactor.png");
-
+  background-image: url("../images/Code refactor.PNG");
 }
+
 #csCheat {
   grid-area: csCheat;
-  background-image: url("../images/CSS cheatsheet.");
+  background-image: url("../images/CSS cheatsheet.PNG");
 }
 
 #ph1{
@@ -61,7 +61,7 @@ body {
   background-image: url("../images/placeholder-1-e1533569576673-960x960.png");
 }
 
-#ph3 {
+#ph3{
   grid-area: ph3;
   background-image: url("../images/placeholder-1-e1533569576673-960x960.png");
 }
@@ -179,21 +179,5 @@ a:active {
   text-decoration: none;
 }
 
-@media screen and (min-width768px) {
-  .categoryGridArea{
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
-
-  #categoryGridArea:last-child {
-    flex-grow: 1;
-  }
 
 
-@media screen and (min-width: 992px) {
-  .categoryGridArea{
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
-  }
-}
