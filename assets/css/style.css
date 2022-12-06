@@ -41,28 +41,28 @@ body {
   ;
 }
 
-#bookcases {
-  grid-area: bookcases;
-  background-image: url("../images/Code refactor.PNG");
+#refactor {
+  grid-area: refactor;
+  background-image: url("../images/Code refactor.png");
 
 }
-#bedroom {
-  grid-area: bedroom;
-  background-image: url("../images/CSS cheatsheet.PNG");
+#csCheat {
+  grid-area: csCheat;
+  background-image: url("../images/CSS cheatsheet.");
 }
 
-#couches {
-  grid-area: couches;
+#ph1{
+  grid-area: ph1;
   background-image: url("../images/placeholder-1-e1533569576673-960x960.png");
 }
 
-#patio {
-  grid-area: patio;
+#ph2{
+  grid-area: ph2;
   background-image: url("../images/placeholder-1-e1533569576673-960x960.png");
 }
 
-#desks {
-  grid-area: desks;
+#ph3 {
+  grid-area: ph3;
   background-image: url("../images/placeholder-1-e1533569576673-960x960.png");
 }
 
