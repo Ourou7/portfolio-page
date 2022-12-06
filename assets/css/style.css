@@ -43,12 +43,12 @@ body {
 
 #refactor {
   grid-area: refactor;
-  background-image: url("../images/Code refactor.PNG");
+  background-image: url("../images/Code refactor.png");
 }
 
 #csCheat {
   grid-area: csCheat;
-  background-image: url("../images/CSS cheatsheet.PNG");
+  background-image: url("../images/CSS cheatsheet.png");
 }
 
 #ph1{
